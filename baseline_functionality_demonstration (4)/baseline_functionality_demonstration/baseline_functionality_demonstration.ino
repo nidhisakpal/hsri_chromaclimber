@@ -5,7 +5,7 @@
 *///////////////////////////////////////////////////////////////
 // Include Libraries
 #include "def_includes.h"
-//#include <Adafruit_NeoPixel.h>
+#include <Adafruit_NeoPixel.h>
 
 
 // Global Variables
@@ -22,7 +22,7 @@ robot controller;
 void setup() 
 {
     boardSetup(&rgb_led, &lipo_monitor, &imu, &color_sensor, &compass);
-    controller.behavior =  BEHAVIOR_SHADOW_INSTRUCTION;
+    controller.behavior =  BEHAVIOR_HEARTBEAT;
 }
 
 ///////////////////////////////////////////////////////////////
